@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "HomePage";
+}
+<style>
+    #background {
+        background-image: url(../images/Images.jpg);
+        background-position: inherit;
+        background-repeat: no-repeat;
+        background-size: 100% 254%;
+        padding: 0px;
+    }
+
+    #Booking_Heading {
+        font-family: Verdana, cursive; /*"Brush Script MT", cursive;*/
+        margin: 0px;
+        text-align: Center;
+        text-decoration: underline;
+    }
+    #text_homePage {
+        font-family: "Brush Script MT", cursive;
+    }
+    
+</style>
+<body id="background">
+    <div>
+        <h1 id="Booking_Heading">Online Flight Booking</h1>
+    </div>
+    <div style="padding-top: 55px;">
+        <h2 id="text_homePage">Travelling isn't simple,but it is Plane. </h2>
+        
+        <h2 id="text_homePage">
+            @Html.ActionLink("Login", "LoginUser") to use our services or @Html.ActionLink(" Register", "RegisterUser")
+        </h2>
+    </div>
+</body>
+
+
